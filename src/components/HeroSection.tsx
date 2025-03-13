@@ -1,5 +1,5 @@
 
-import { ArrowRight, Github, Linkedin } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Rows3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
@@ -66,7 +66,7 @@ export function HeroSection() {
           className="flex flex-col items-center text-muted-foreground hover:text-foreground transition-colors"
         >
           <span className="text-sm mb-2">Scroll Down</span>
-          <div className="w-0.5 h-12 bg-gradient-to-b from-primary to-transparent"></div>
+          <Rows3 className="h-6 w-6 animate-bounce" />
         </motion.a>
       </div>
     </section>
