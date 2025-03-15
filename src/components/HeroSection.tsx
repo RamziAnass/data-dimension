@@ -2,6 +2,7 @@
 import { ArrowRight, Linkedin, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export function HeroSection() {
   return (
@@ -46,13 +47,34 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="relative w-full aspect-square max-w-lg mx-auto lg:mx-0"
+          className="relative w-full max-w-lg mx-auto lg:mx-0 grid grid-cols-2 gap-4"
         >
-          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-primary/0 blur-3xl opacity-70 animate-rotate-slow"></div>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="relative w-4/5 aspect-square overflow-hidden rounded-full border-4 border-background">
-              <div className="w-full h-full image-placeholder rounded-full"></div>
-            </div>
+          <div className="col-span-2">
+            <AspectRatio ratio={16/9} className="bg-muted overflow-hidden rounded-lg">
+              <img 
+                src="/placeholder.svg" 
+                alt="Data analysis dashboard" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </AspectRatio>
+          </div>
+          <div>
+            <AspectRatio ratio={1/1} className="bg-muted overflow-hidden rounded-lg">
+              <img 
+                src="/placeholder.svg" 
+                alt="Strategic planning session" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </AspectRatio>
+          </div>
+          <div>
+            <AspectRatio ratio={1/1} className="bg-muted overflow-hidden rounded-lg">
+              <img 
+                src="/placeholder.svg" 
+                alt="Market research visualization" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </AspectRatio>
           </div>
         </motion.div>
       </div>
