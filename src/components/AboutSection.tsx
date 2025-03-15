@@ -130,7 +130,7 @@ export function AboutSection() {
             <div className="bg-background rounded-xl p-6 shadow-sm">
               <h3 className="text-xl font-semibold mb-4">Professional Summary</h3>
               <p className="text-muted-foreground mb-4">
-              Diplômé d'un Master en Management de l'Information de l’École des Sciences de l'Information de Rabat, avec une Licence en Gestion de la FP de Béni Mellal. en plus des expériences Pro , Stage En veille Stratégique et Analyse de données, Freelance (Commerce du Nom de domaines, POD, Data Annotation & Evaluation)
+              Diplômé d'un Mastr en Management de l'Information de l’École des Sciences de l'Information de Rabat, avec une Licence en Gestion de la FP de Béni Mellal. en plus des expériences Pro , Stage En veille Stratégique et Analyse de données, Freelance (Commerce du Nom de domaines, POD, Data Annotation & Evaluation)
 
             </p>
               
