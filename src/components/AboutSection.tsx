@@ -90,10 +90,10 @@ export function AboutSection() {
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="font-medium">Anglais</span>
-                    <span className="text-sm text-muted-foreground">Avancé</span>
+                    <span className="text-sm text-muted-foreground">Intermédiaire</span>
                   </div>
                   <div className="h-2 bg-secondary rounded-full">
-                    <div className="h-full bg-primary rounded-full" style={{ width: '90%' }}></div>
+                    <div className="h-full bg-primary rounded-full" style={{ width: '70%' }}></div>
                   </div>
                 </div>
               </div>
@@ -108,7 +108,7 @@ export function AboutSection() {
             className="space-y-8"
           >
             <div className="bg-background rounded-xl p-6 shadow-sm">
-              <h3 className="text-xl font-semibold mb-6">Professional Skills</h3>
+              <h3 className="text-xl font-semibold mb-6">Compétences Professionnelles</h3>
               <div className="space-y-6">
                 {skills.map((skill, index) => (
                   <div key={index}>
@@ -130,14 +130,10 @@ export function AboutSection() {
             <div className="bg-background rounded-xl p-6 shadow-sm">
               <h3 className="text-xl font-semibold mb-4">Professional Summary</h3>
               <p className="text-muted-foreground mb-4">
-                I'm a data analyst and strategic intelligence consultant with over 10 years of experience helping businesses make data-driven decisions. I specialize in transforming complex data into actionable insights.
-              </p>
-              <p className="text-muted-foreground mb-4">
-                My expertise extends to domain name investment, where I help businesses secure valuable digital assets and develop effective online brand strategies.
-              </p>
-              <p className="text-muted-foreground">
-                I've worked with clients across various industries including finance, technology, healthcare, and e-commerce, delivering solutions that drive growth and innovation.
-              </p>
+              Diplômé d'un Master en Management de l'Information de l’École des Sciences de l'Information de Rabat, avec une Licence en Gestion de la FP de Béni Mellal. en plus des expériences Pro , Stage En veille Stratégique et Analyse de données, Freelance (Commerce du Nom de domaines, POD, Data Annotation & Evaluation)
+
+            </p>
+              
             </div>
           </motion.div>
         </div>
