@@ -15,7 +15,7 @@ export function PortfolioSection() {
       category: "Data",
       image: "/placeholder.svg",
       description: "Interactive dashboard for real-time market analysis and trend visualization",
-      stack: ["React", "D3.js", "Python", "AWS"],
+      stack: ["Excel", "Canva", "Microsoft PowerPoint"],
       demoUrl: "#",
       codeUrl: "#",
     },
