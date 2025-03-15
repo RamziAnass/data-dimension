@@ -11,8 +11,8 @@ export function PortfolioSection() {
   
   const projects = [
     {
-      title: "Market Analysis Dashboard",
-      category: "data",
+      title: "Commerciale Airplans Data Insights ",
+      category: "Data",
       image: "/placeholder.svg",
       description: "Interactive dashboard for real-time market analysis and trend visualization",
       stack: ["React", "D3.js", "Python", "AWS"],

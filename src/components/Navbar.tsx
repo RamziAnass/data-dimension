@@ -28,9 +28,9 @@ export function Navbar() {
   }, [location.pathname]);
 
   const navLinks = [
-    { name: "About", path: "/#about" },
-    { name: "Services", path: "/#services" },
-    { name: "Portfolio", path: "/#portfolio" },
+    { name: "A propos", path: "/#about" },
+    { name: "Compétences", path: "/#services" },
+    { name: "Projets", path: "/#portfolio" },
     { name: "Blog", path: "/#blog" },
     { name: "Contact", path: "/#contact" },
   ];
@@ -49,8 +49,8 @@ export function Navbar() {
           to="/"
           className="flex items-center space-x-2 font-heading text-xl font-bold"
         >
-          <span className="text-foreground">John</span>
-          <span className="text-primary">Doe</span>
+          <span className="text-foreground">Ramzi</span>
+          <span className="text-primary">Anass</span>
         </Link>
 
         {/* Desktop Menu */}
