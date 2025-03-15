@@ -14,25 +14,25 @@ export function HeroSection() {
           className="flex flex-col space-y-6 lg:pr-8"
         >
           <span className="inline-block text-sm font-medium bg-primary/10 text-primary px-3 py-1 rounded-full">
-            Data Analysis & Strategic Intelligence
+            Data Analysis & Veille Stratégique & Competitive Intelligence
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            John Doe
+            Ramzi Anass
           </h1>
           <h2 className="text-xl md:text-2xl text-muted-foreground">
-            Empowering Businesses with Data-Driven Insights and Market Intelligence
-          </h2>
+          Transformation des informations et Données à des Recommandations et Leviers Stratégiques          </h2>
           <p className="text-muted-foreground max-w-lg">
-            Providing expertise in data analysis, strategic intelligence consulting, and domain name investment to help businesses make informed decisions.
+          Spécialiste de l'information , Chargé de Veille Strategique / Competitve Intelligence Analyste, et Data Analyst.
+          EX Domain names Investor,EX POD Designer, EX Data Evaluator.
           </p>
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <Button asChild className="rounded-full" size="lg">
               <a href="#contact">
-                Contact Me <ArrowRight className="ml-2 h-4 w-4" />
+                Contactez moi <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
             <Button variant="outline" className="rounded-full" size="lg" asChild>
-              <a href="#portfolio">View Portfolio</a>
+              <a href="#portfolio">Voir Projets</a>
             </Button>
             <Button variant="ghost" size="icon" className="rounded-full" asChild>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

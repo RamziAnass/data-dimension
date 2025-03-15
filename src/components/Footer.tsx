@@ -15,7 +15,7 @@ export function Footer() {
               <span className="text-primary">Doe</span>
             </Link>
             <p className="text-muted-foreground max-w-xs">
-              Empowering businesses with data-driven insights and market intelligence.
+            Transformation des informations et Données à des Recommandations et Leviers Stratégiques.
             </p>
           </div>
           
@@ -24,17 +24,17 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <a href="/#about" className="text-muted-foreground hover:text-foreground transition-colors">
-                  About
+                  A Propos
                 </a>
               </li>
               <li>
                 <a href="/#services" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Services
+                  Compétences
                 </a>
               </li>
               <li>
                 <a href="/#portfolio" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Portfolio
+                  Projets
                 </a>
               </li>
               <li>
@@ -62,15 +62,7 @@ export function Footer() {
               >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a 
-                href="https://github.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="bg-secondary/80 hover:bg-secondary p-2 rounded-full text-foreground transition-colors"
-                aria-label="GitHub"
-              >
-                <Github className="h-5 w-5" />
-              </a>
+              
               <a 
                 href="https://twitter.com" 
                 target="_blank" 
@@ -93,7 +85,7 @@ export function Footer() {
         
         <div className="border-t border-border/40 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} John Doe. All rights reserved.
+            &copy; {currentYear} Ramzi Anass. All rights reserved.
           </p>
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
             <Link to="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">

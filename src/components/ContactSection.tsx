@@ -11,9 +11,9 @@ export function ContactSection() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
-    name: "",
+    nom: "",
     email: "",
-    subject: "",
+    sujet: "",
     message: "",
   });
 
@@ -59,8 +59,8 @@ export function ContactSection() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
           <div className="w-16 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground">
-            Have a project in mind or want to discuss how data analysis and strategic intelligence can benefit your business? Let's talk.
-          </p>
+Vous avez besoin d'un analyste veilleur ou data analyst ou spécialiste de l'information ? ou bien des informations sur le domaine ? 
+Vous pouvez me contacter          </p>
         </motion.div>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -72,7 +72,7 @@ export function ContactSection() {
             className="lg:col-span-1 space-y-6"
           >
             <div className="bg-background rounded-xl p-6 shadow-sm">
-              <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
+              <h3 className="text-xl font-semibold mb-6">Contact</h3>
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="bg-primary/10 p-3 rounded-full mr-4">
@@ -94,7 +94,7 @@ export function ContactSection() {
                     <Phone className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <p className="font-medium">Phone</p>
+                    <p className="font-medium">Téléphone</p>
                     <a 
                       href="tel:+11234567890" 
                       className="text-muted-foreground hover:text-foreground transition-colors"
@@ -110,29 +110,13 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="font-medium">Location</p>
-                    <p className="text-muted-foreground">San Francisco, CA</p>
+                    <p className="text-muted-foreground">Maroc</p>
                   </div>
                 </div>
               </div>
             </div>
             
-            <div className="bg-background rounded-xl p-6 shadow-sm">
-              <h3 className="text-xl font-semibold mb-4">Office Hours</h3>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex justify-between">
-                  <span>Monday - Friday:</span>
-                  <span>9:00 AM - 6:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Saturday:</span>
-                  <span>By appointment</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Sunday:</span>
-                  <span>Closed</span>
-                </li>
-              </ul>
-            </div>
+            <
           </motion.div>
           
           <motion.div
@@ -143,25 +127,25 @@ export function ContactSection() {
             className="lg:col-span-2"
           >
             <div className="bg-background rounded-xl p-6 shadow-sm">
-              <h3 className="text-xl font-semibold mb-6">Send Me a Message</h3>
+              <h3 className="text-xl font-semibold mb-6">Envoyez un message</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium">
-                      Your Name
+                      Votre Nom
                     </label>
                     <Input
                       id="name"
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="John Doe"
+                      placeholder="Votre Nom"
                       required
                     />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium">
-                      Your Email
+                      Votre Email
                     </label>
                     <Input
                       id="email"
@@ -169,7 +153,7 @@ export function ContactSection() {
                       type="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="john@example.com"
+                      placeholder="nom@example.com"
                       required
                     />
                   </div>
@@ -177,14 +161,14 @@ export function ContactSection() {
                 
                 <div className="space-y-2">
                   <label htmlFor="subject" className="text-sm font-medium">
-                    Subject
+                    Sujet
                   </label>
                   <Input
                     id="subject"
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    placeholder="How can I help you?"
+                    placeholder="Comment je peux vous aider?"
                     required
                   />
                 </div>
@@ -198,7 +182,7 @@ export function ContactSection() {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Your message here..."
+                    placeholder="Votre Message..."
                     rows={6}
                     required
                   />
@@ -213,7 +197,7 @@ export function ContactSection() {
                       </>
                     ) : (
                       <>
-                        Send Message
+                        Envoyez 
                         <Send className="ml-2 h-4 w-4" />
                       </>
                     )}

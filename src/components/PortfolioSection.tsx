@@ -12,7 +12,7 @@ export function PortfolioSection() {
   const projects = [
     {
       title: "Commerciale Airplans Data Insights ",
-      category: "Data",
+      category: "Data ",
       image: "/placeholder.svg",
       description: "Interactive dashboard for real-time market analysis and trend visualization",
       stack: ["Excel", "Canva", "Microsoft PowerPoint"],
