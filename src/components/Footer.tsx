@@ -11,8 +11,8 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div>
             <Link to="/" className="flex items-center space-x-2 font-heading text-xl font-bold mb-4">
-              <span className="text-foreground">John</span>
-              <span className="text-primary">Doe</span>
+              <span className="text-foreground">Ramzi</span>
+              <span className="text-primary">Anass</span>
             </Link>
             <p className="text-muted-foreground max-w-xs">
             Transformation des informations et Données à des Recommandations et Actions Stratégiques.
