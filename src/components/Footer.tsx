@@ -15,7 +15,7 @@ export function Footer() {
               <span className="text-primary">Doe</span>
             </Link>
             <p className="text-muted-foreground max-w-xs">
-            Transformation des informations et Données à des Recommandations et Leviers Stratégiques.
+            Transformation des informations et Données à des Recommandations et Actions Stratégiques.
             </p>
           </div>
           
