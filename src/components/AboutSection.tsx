@@ -25,7 +25,8 @@ export function AboutSection() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">A propos</h2>
           <div className="w-16 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground">
-           Passioné par l'analyse de données,la veille stratégique et l'intelligence Stratégique. 
+           Lauréat du Master du Management de l'information et de Licence en Gestion avec un 
+           passion vers l'analyse de données,la veille stratégique et l'intelligence Stratégique. 
           </p>
         </div>
 
