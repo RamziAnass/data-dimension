@@ -1,18 +1,14 @@
-
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
-
 export function Footer() {
   const currentYear = new Date().getFullYear();
-  
-  return (
-    <footer className="bg-background border-t border-border/40">
+  return <footer className="bg-background border-t border-border/40">
       <div className="container py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div>
             <Link to="/" className="flex items-center space-x-2 font-heading text-xl font-bold mb-4">
-              <span className="text-foreground">John</span>
-              <span className="text-primary">Doe</span>
+              <span className="text-foreground">Ramzi</span>
+              <span className="text-primary">Anass</span>
             </Link>
             <p className="text-muted-foreground max-w-xs">
             Transformation des informations et Données à des Recommandations et Leviers Stratégiques.
@@ -20,7 +16,8 @@ export function Footer() {
           </div>
           
           <div>
-            <h3 className="font-heading text-lg font-medium mb-4">Quick Links</h3>
+            <h3 className="font-heading text-lg font-medium mb-4">Liens
+          </h3>
             <ul className="space-y-2">
               <li>
                 <a href="/#about" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -51,32 +48,16 @@ export function Footer() {
           </div>
           
           <div>
-            <h3 className="font-heading text-lg font-medium mb-4">Connect</h3>
+            <h3 className="font-heading text-lg font-medium mb-4">Connecter</h3>
             <div className="flex space-x-4">
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="bg-secondary/80 hover:bg-secondary p-2 rounded-full text-foreground transition-colors"
-                aria-label="LinkedIn"
-              >
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-secondary/80 hover:bg-secondary p-2 rounded-full text-foreground transition-colors" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5" />
               </a>
               
-              <a 
-                href="https://twitter.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="bg-secondary/80 hover:bg-secondary p-2 rounded-full text-foreground transition-colors"
-                aria-label="Twitter"
-              >
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="bg-secondary/80 hover:bg-secondary p-2 rounded-full text-foreground transition-colors" aria-label="Twitter">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a 
-                href="mailto:contact@example.com" 
-                className="bg-secondary/80 hover:bg-secondary p-2 rounded-full text-foreground transition-colors"
-                aria-label="Email"
-              >
+              <a href="mailto:contact@example.com" className="bg-secondary/80 hover:bg-secondary p-2 rounded-full text-foreground transition-colors" aria-label="Email">
                 <Mail className="h-5 w-5" />
               </a>
             </div>
@@ -97,6 +78,5 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 }

@@ -82,12 +82,8 @@ export function PortfolioSection() {
             <Button variant={filter === "data" ? "default" : "ghost"} className={cn("rounded-full", filter === "data" ? "" : "hover:bg-secondary")} onClick={() => setFilter("data")}>
               Data Analysis
             </Button>
-            <Button variant={filter === "strategy" ? "default" : "ghost"} className={cn("rounded-full", filter === "strategy" ? "" : "hover:bg-secondary")} onClick={() => setFilter("strategy")}>
-              Strategy
-            </Button>
-            <Button variant={filter === "domains" ? "default" : "ghost"} className={cn("rounded-full", filter === "domains" ? "" : "hover:bg-secondary")} onClick={() => setFilter("domains")}>
-              Domains
-            </Button>
+            <Button variant={filter === "strategy" ? "default" : "ghost"} className={cn("rounded-full", filter === "strategy" ? "" : "hover:bg-secondary")} onClick={() => setFilter("strategy")}>Veille Stratégique</Button>
+            <Button variant={filter === "domains" ? "default" : "ghost"} className={cn("rounded-full", filter === "domains" ? "" : "hover:bg-secondary")} onClick={() => setFilter("domains")}>Noms de Domains</Button>
           </div>
         </div>
         
