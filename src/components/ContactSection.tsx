@@ -115,8 +115,6 @@ Vous pouvez me contacter          </p>
                 </div>
               </div>
             </div>
-            
-            <
           </motion.div>
           
           <motion.div
