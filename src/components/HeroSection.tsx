@@ -1,5 +1,5 @@
 
-import { ArrowRight, Github, Linkedin } from "lucide-react";
+import { ArrowRight, Linkedin, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
@@ -56,6 +56,16 @@ export function HeroSection() {
           </div>
         </motion.div>
       </div>
+
+      <motion.div 
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.8 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center"
+      >
+        <span className="text-sm text-muted-foreground mb-2">Scroll Down</span>
+        <ChevronDown className="h-6 w-6 text-primary animate-bounce" />
+      </motion.div>
     </section>
   );
 }
