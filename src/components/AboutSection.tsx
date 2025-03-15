@@ -44,52 +44,19 @@ export function AboutSection() {
               </h3>
               <div className="space-y-4">
                 <div className="border-l-2 border-primary pl-4">
-                  <p className="text-sm text-muted-foreground">2010 - 2012</p>
-                  <h4 className="font-medium">Master's in Data Science</h4>
-                  <p className="text-sm text-muted-foreground">Stanford University</p>
+                  <p className="text-sm text-muted-foreground">2022 - 2024</p>
+                  <h4 className="font-medium">Master Spécialisé en Management de l'information</h4>
+                  <p className="text-sm text-muted-foreground">Ecole des Sciences de l'information - RABAT</p>
                 </div>
                 <div className="border-l-2 border-primary pl-4">
-                  <p className="text-sm text-muted-foreground">2006 - 2010</p>
-                  <h4 className="font-medium">Bachelor's in Computer Science</h4>
-                  <p className="text-sm text-muted-foreground">MIT</p>
+                  <p className="text-sm text-muted-foreground">2018-2021</p>
+                  <h4 className="font-medium">Licence en Sciences de Gestion </h4>
+                  <p className="text-sm text-muted-foreground">Faculté Polydisciplinaire Béni Mellal - FP BM</p>
                 </div>
               </div>
             </motion.div>
             
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="bg-background rounded-xl p-6 shadow-sm"
-            >
-              <h3 className="text-xl font-semibold mb-4 flex items-center">
-                <Award className="mr-2 text-primary" /> Certifications
-              </h3>
-              <ul className="space-y-2">
-                <li className="flex items-start">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5 mr-2" />
-                  <div>
-                    <p className="font-medium">Google Data Analytics Professional Certificate</p>
-                    <p className="text-sm text-muted-foreground">Google, 2020</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5 mr-2" />
-                  <div>
-                    <p className="font-medium">Microsoft Certified: Data Analyst Associate</p>
-                    <p className="text-sm text-muted-foreground">Microsoft, 2019</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5 mr-2" />
-                  <div>
-                    <p className="font-medium">Tableau Desktop Specialist</p>
-                    <p className="text-sm text-muted-foreground">Tableau, 2018</p>
-                  </div>
-                </li>
-              </ul>
-            </motion.div>
+        
             
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -99,13 +66,13 @@ export function AboutSection() {
               className="bg-background rounded-xl p-6 shadow-sm"
             >
               <h3 className="text-xl font-semibold mb-4 flex items-center">
-                <Languages className="mr-2 text-primary" /> Languages
+                <Languages className="mr-2 text-primary" /> Langues
               </h3>
               <div className="space-y-3">
                 <div>
                   <div className="flex justify-between mb-1">
-                    <span className="font-medium">English</span>
-                    <span className="text-sm text-muted-foreground">Native</span>
+                    <span className="font-medium">Arabe</span>
+                    <span className="text-sm text-muted-foreground">Maternelle</span>
                   </div>
                   <div className="h-2 bg-secondary rounded-full">
                     <div className="h-full bg-primary rounded-full" style={{ width: '100%' }}></div>
@@ -113,8 +80,17 @@ export function AboutSection() {
                 </div>
                 <div>
                   <div className="flex justify-between mb-1">
-                    <span className="font-medium">French</span>
-                    <span className="text-sm text-muted-foreground">Fluent</span>
+                    <span className="font-medium">Français</span>
+                    <span className="text-sm text-muted-foreground">Courant</span>
+                  </div>
+                  <div className="h-2 bg-secondary rounded-full">
+                    <div className="h-full bg-primary rounded-full" style={{ width: '90%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <span className="font-medium">Anglais</span>
+                    <span className="text-sm text-muted-foreground">Avancé</span>
                   </div>
                   <div className="h-2 bg-secondary rounded-full">
                     <div className="h-full bg-primary rounded-full" style={{ width: '90%' }}></div>
