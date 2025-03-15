@@ -1,5 +1,5 @@
 
-import { ArrowRight, Github, Linkedin, Rows3 } from "lucide-react";
+import { ArrowRight, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
@@ -55,19 +55,6 @@ export function HeroSection() {
             </div>
           </div>
         </motion.div>
-      </div>
-      
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex justify-center w-full">
-        <motion.a
-          href="#about"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 1 }}
-          className="flex flex-col items-center text-muted-foreground hover:text-foreground transition-colors"
-        >
-          <span className="text-sm mb-2">Scroll Down</span>
-          <Rows3 className="h-6 w-6 animate-bounce" />
-        </motion.a>
       </div>
     </section>
   );
