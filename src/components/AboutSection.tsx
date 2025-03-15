@@ -1,26 +1,37 @@
-
 import { motion } from "framer-motion";
 import { CheckCircle2, GraduationCap, Award, Languages } from "lucide-react";
-
 export function AboutSection() {
-  const skills = [
-    { name: "Data Analysis", level: 95 },
-    { name: "Strategic Planning", level: 90 },
-    { name: "Market Research", level: 85 },
-    { name: "Domain Investment", level: 80 },
-    { name: "Business Intelligence", level: 90 },
-    { name: "Data Visualization", level: 85 },
-  ];
-
-  return (
-    <section id="about" className="section-spacing bg-secondary/30">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="container"
-      >
+  const skills = [{
+    name: "Data Analysis",
+    level: 95
+  }, {
+    name: "Strategic Planning",
+    level: 90
+  }, {
+    name: "Market Research",
+    level: 85
+  }, {
+    name: "Domain Investment",
+    level: 80
+  }, {
+    name: "Business Intelligence",
+    level: 90
+  }, {
+    name: "Data Visualization",
+    level: 85
+  }];
+  return <section id="about" className="section-spacing bg-secondary/30">
+      <motion.div initial={{
+      opacity: 0,
+      y: 20
+    }} whileInView={{
+      opacity: 1,
+      y: 0
+    }} viewport={{
+      once: true
+    }} transition={{
+      duration: 0.5
+    }} className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">A propos</h2>
           <div className="w-16 h-1 bg-primary mx-auto mb-6"></div>
@@ -32,13 +43,18 @@ export function AboutSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="space-y-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-background rounded-xl p-6 shadow-sm"
-            >
+            <motion.div initial={{
+            opacity: 0,
+            y: 20
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            duration: 0.5,
+            delay: 0.2
+          }} className="bg-background rounded-xl p-6 shadow-sm">
               <h3 className="text-xl font-semibold mb-4 flex items-center">
                 <GraduationCap className="mr-2 text-primary" /> Education & Background
               </h3>
@@ -58,13 +74,18 @@ export function AboutSection() {
             
         
             
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="bg-background rounded-xl p-6 shadow-sm"
-            >
+            <motion.div initial={{
+            opacity: 0,
+            y: 20
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            duration: 0.5,
+            delay: 0.4
+          }} className="bg-background rounded-xl p-6 shadow-sm">
               <h3 className="text-xl font-semibold mb-4 flex items-center">
                 <Languages className="mr-2 text-primary" /> Langues
               </h3>
@@ -75,7 +96,9 @@ export function AboutSection() {
                     <span className="text-sm text-muted-foreground">Maternelle</span>
                   </div>
                   <div className="h-2 bg-secondary rounded-full">
-                    <div className="h-full bg-primary rounded-full" style={{ width: '100%' }}></div>
+                    <div className="h-full bg-primary rounded-full" style={{
+                    width: '100%'
+                  }}></div>
                   </div>
                 </div>
                 <div>
@@ -84,7 +107,9 @@ export function AboutSection() {
                     <span className="text-sm text-muted-foreground">Courant</span>
                   </div>
                   <div className="h-2 bg-secondary rounded-full">
-                    <div className="h-full bg-primary rounded-full" style={{ width: '90%' }}></div>
+                    <div className="h-full bg-primary rounded-full" style={{
+                    width: '90%'
+                  }}></div>
                   </div>
                 </div>
                 <div>
@@ -93,42 +118,46 @@ export function AboutSection() {
                     <span className="text-sm text-muted-foreground">Intermédiaire</span>
                   </div>
                   <div className="h-2 bg-secondary rounded-full">
-                    <div className="h-full bg-primary rounded-full" style={{ width: '70%' }}></div>
+                    <div className="h-full bg-primary rounded-full" style={{
+                    width: '70%'
+                  }}></div>
                   </div>
                 </div>
               </div>
             </motion.div>
           </div>
           
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="space-y-8"
-          >
+          <motion.div initial={{
+          opacity: 0,
+          y: 20
+        }} whileInView={{
+          opacity: 1,
+          y: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.5,
+          delay: 0.5
+        }} className="space-y-8">
             <div className="bg-background rounded-xl p-6 shadow-sm">
               <h3 className="text-xl font-semibold mb-6">Compétences Professionnelles</h3>
               <div className="space-y-6">
-                {skills.map((skill, index) => (
-                  <div key={index}>
+                {skills.map((skill, index) => <div key={index}>
                     <div className="flex justify-between mb-1">
                       <span className="font-medium">{skill.name}</span>
                       <span className="text-sm text-muted-foreground">{skill.level}%</span>
                     </div>
                     <div className="h-2 bg-secondary rounded-full">
-                      <div 
-                        className="h-full bg-primary rounded-full transition-all duration-1000 ease-out" 
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
+                      <div className="h-full bg-primary rounded-full transition-all duration-1000 ease-out" style={{
+                    width: `${skill.level}%`
+                  }}></div>
                     </div>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
             
             <div className="bg-background rounded-xl p-6 shadow-sm">
-              <h3 className="text-xl font-semibold mb-4">Professional Summary</h3>
+              <h3 className="text-xl font-semibold mb-4">Profil</h3>
               <p className="text-muted-foreground mb-4">
               Diplômé d'un Master en Management de l'Information de l’École des Sciences de l'Information de Rabat, avec une Licence en Gestion de la FP de Béni Mellal. en plus des expériences Pro , Stage En veille Stratégique et Analyse de données, Freelance (Commerce du Nom de domaines, POD, Data Annotation & Evaluation)
 
@@ -138,6 +167,5 @@ export function AboutSection() {
           </motion.div>
         </div>
       </motion.div>
-    </section>
-  );
+    </section>;
 }
