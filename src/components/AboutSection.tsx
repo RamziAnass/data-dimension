@@ -22,10 +22,10 @@ export function AboutSection() {
         className="container"
       >
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">A propos</h2>
           <div className="w-16 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground">
-            With over a decade of experience in data analysis and strategic consulting, I help businesses leverage data to make informed decisions.
+           Passioné par l'analyse de données,la veille stratégique et l'intelligence Stratégique. 
           </p>
         </div>
 
