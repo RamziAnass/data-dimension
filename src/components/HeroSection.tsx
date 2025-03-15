@@ -2,6 +2,7 @@
 import { ArrowRight, Linkedin, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 export function HeroSection() {
   return (
@@ -51,7 +52,13 @@ export function HeroSection() {
           <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-primary/0 blur-3xl opacity-70 animate-rotate-slow"></div>
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="relative w-4/5 aspect-square overflow-hidden rounded-full border-4 border-background">
-              <div className="w-full h-full image-placeholder rounded-full"></div>
+              <div className="w-full h-full image-placeholder rounded-full bg-gray-50">
+                <img 
+                  src="/lovable-uploads/46419417-0580-476e-8b98-848ba6817af0.png" 
+                  alt="Ramzi Anass Logo" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </motion.div>

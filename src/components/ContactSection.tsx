@@ -38,9 +38,9 @@ export function ContactSection() {
       
       // Reset form
       setFormData({
-        name: "",
+        nom: "",
         email: "",
-        subject: "",
+        sujet: "",
         message: "",
       });
     }, 1500);
@@ -129,13 +129,13 @@ Vous pouvez me contacter          </p>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium">
+                    <label htmlFor="nom" className="text-sm font-medium">
                       Votre Nom
                     </label>
                     <Input
-                      id="name"
-                      name="name"
-                      value={formData.name}
+                      id="nom"
+                      name="nom"
+                      value={formData.nom}
                       onChange={handleChange}
                       placeholder="Votre Nom"
                       required
@@ -158,13 +158,13 @@ Vous pouvez me contacter          </p>
                 </div>
                 
                 <div className="space-y-2">
-                  <label htmlFor="subject" className="text-sm font-medium">
+                  <label htmlFor="sujet" className="text-sm font-medium">
                     Sujet
                   </label>
                   <Input
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
+                    id="sujet"
+                    name="sujet"
+                    value={formData.sujet}
                     onChange={handleChange}
                     placeholder="Comment je peux vous aider?"
                     required
